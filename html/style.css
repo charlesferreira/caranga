@@ -1,0 +1,15 @@
+.filtros {
+  position: relative;
+  background: url("peter-broomfield-m3m-lnR90uM-unsplash.jpg") center center;
+  background-size: cover;
+  padding: 5rem 0;
+}
+
+.filtros-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: opacity(75%);
+}
