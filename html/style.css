@@ -1,5 +1,5 @@
 h2 {
-  margin-top: 5rem;
+  margin-top: 3rem;
   font-size: x-large;
   color: #666;
   font-weight: 700;
@@ -10,7 +10,7 @@ h3 {
 }
 
 .max-width {
-  max-width: 1600px;
+  max-width: 1800px;
 }
 
 #filtros {
@@ -58,6 +58,15 @@ main .card:not(:first-child) {
   text-transform: uppercase;
 }
 
-.footer {
-  background-color: #f5f5f5;
+#recentes strong:last-child {
+  font-size: 120%;
+}
+
+#recentes a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem 1.25rem;
 }
