@@ -1,5 +1,5 @@
 h2 {
-  margin-top: 2rem;
+  margin-top: 5rem;
   font-size: x-large;
   color: #666;
   font-weight: 700;
@@ -15,8 +15,7 @@ h3 {
 
 #filtros {
   position: relative;
-  padding: 7rem 0;
-  background: url(peter-broomfield-m3m-lnR90uM-unsplash.jpg) center center;
+  background: url(carros/camaro.jpg) center center;
   background-size: cover;
 }
 
@@ -27,7 +26,7 @@ h3 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #12489a;
+  background-color: #1a3b63;
   filter: opacity(75%);
 }
 
@@ -35,16 +34,16 @@ main img {
   width: 100%;
 }
 
+main .card {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
 main .card:not(:first-child) {
   margin-left: 30px;
 }
 
-main .card {
-  border-radius: 5px;
-  overflow: auto;
-}
-
-.categoria a {
+#categorias a {
   position: absolute;
   top: 0;
   left: 0;
