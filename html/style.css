@@ -29,6 +29,10 @@ h3 {
   margin-bottom: 60px;
 }
 
+#header img {
+  height: 35px;
+}
+
 #filtros {
   position: relative;
   background: url(carros/camaro.jpg) center center;
