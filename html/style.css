@@ -48,8 +48,9 @@ h3 {
   filter: opacity(75%);
 }
 
-#filtros .row > :not(:first-child) {
-  padding-left: 0;
+#filtros [class*="col-"] {
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 #filtros input,
