@@ -14,6 +14,23 @@ h3 {
   max-width: 1800px;
 }
 
+.stripes {
+  border-radius: 10px 10px 0 0;
+  height: 20px;
+  background: repeating-linear-gradient(
+    45deg,
+    black,
+    black 10px,
+    white 10px,
+    white 20px
+  );
+  opacity: 0.2;
+}
+
+#header {
+  margin-bottom: 60px;
+}
+
 #filtros {
   position: relative;
   background: url(carros/camaro.jpg) center center;
@@ -29,6 +46,19 @@ h3 {
   bottom: 0;
   background-color: #1a3b63;
   filter: opacity(75%);
+}
+
+#filtros .row > :not(:first-child) {
+  padding-left: 0;
+}
+
+#filtros input,
+#filtros select,
+#filtros button {
+  font-size: small;
+}
+#filtros button {
+  font-weight: bold;
 }
 
 main img {

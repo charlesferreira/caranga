@@ -20,8 +20,8 @@
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
   </head>
   <body class="d-flex flex-column h-100">
-    <header>
-      <nav class="navbar navbar-light bg-light">
+    <header id="header">
+      <nav class="navbar navbar-light bg-white fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#" title="Voltar ao início">
             <img src="logo-caranga-alt.png" alt="Caranga" />
@@ -40,15 +40,102 @@
       </nav>
     </header>
 
-    <main>
-      <section id="filtros" class="py-5">
-        <div class="container my-5">
-          <div class="card">
-            <div class="card-body">Filtros aqui...</div>
+    <section id="filtros" class="py-5">
+      <div class="container my-5">
+        <div class="stripes"></div>
+        <div class="card">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <span class="nav-link text-dark font-weight-bold active"
+                >Comprar</span
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-secondary font-weight-bold"
+                >Vender</a
+              >
+            </li>
+          </ul>
+          <div class="card-body">
+            <div class="row">
+              <div class="form-group col-8">
+                <input class="form-control" placeholder="Digite sua busca" />
+              </div>
+              <div class="form-group col-2">
+                <select class="form-control">
+                  <option value="">Ano de</option>
+                  <option>2021</option>
+                  <option>2020</option>
+                  <option>2019</option>
+                  <option>2018</option>
+                  <option>2017</option>
+                  <option>2016</option>
+                  <option>2015</option>
+                  <option>2014</option>
+                  <option>2013</option>
+                  <option>2012</option>
+                  <option>2011</option>
+                  <option>2010</option>
+                </select>
+              </div>
+              <div class="form-group col-2">
+                <select class="form-control">
+                  <option value="">Ano até</option>
+                  <option>2021</option>
+                  <option>2020</option>
+                  <option>2019</option>
+                  <option>2018</option>
+                  <option>2017</option>
+                  <option>2016</option>
+                  <option>2015</option>
+                  <option>2014</option>
+                  <option>2013</option>
+                  <option>2012</option>
+                  <option>2011</option>
+                  <option>2010</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-2">
+                <select class="form-control">
+                  <option value="">Categoria</option>
+                  <option>Carro</option>
+                  <option>Moto</option>
+                  <option>SUV</option>
+                </select>
+              </div>
+              <div class="form-group col-2">
+                <select class="form-control">
+                  <option selected>Até 10000 km</option>
+                  <option>Até 20000 km</option>
+                  <option>Até 30000 km</option>
+                  <option>Até 40000 km</option>
+                  <option>Até 50000 km</option>
+                  <option>Até 60000 km</option>
+                  <option>Até 70000 km</option>
+                  <option>Até 80000 km</option>
+                  <option>Até 90000 km</option>
+                  <option>Até 100000 km</option>
+                  <option value="">Sem limite de km</option>
+                </select>
+              </div>
+              <div class="form-group col-2">
+                <input class="form-control" placeholder="De R$" />
+              </div>
+              <div class="form-group col-2">
+                <input class="form-control" placeholder="Até R$" />
+              </div>
+              <div class="col">
+                <button class="btn btn-primary btn-block">Pesquisar</button>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
+    <main>
       <section id="categorias" class="mb-5">
         <div class="container-fluid max-width">
           <h2>Categorias</h2>
