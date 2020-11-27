@@ -25,7 +25,7 @@
 
   <body class="d-flex flex-column h-100">
     <header id="header">
-      <nav class="navbar navbar-light bg-white fixed-top">
+      <nav class="navbar navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
           <a class="navbar-brand" href="." title="Voltar ao início">
             <img src="images/logo-caranga.png" alt="Caranga" />
@@ -44,14 +44,128 @@
       </nav>
     </header>
 
-    <aside id="sidebar" class="h-100">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+    <aside id="sidebar" class="h-100 shadow-sm">
+      <div class="container-fluid">
+        <div class="row p-3 gutter-sm">
+          <strong class="col-12 pb-1 text-sm">Categoria</strong>
+          <div class="col-12">
+            <div class="form-group">
+              <select class="form-control">
+                <option value="">Todas as categorias</option>
+                <option>Carros</option>
+                <option>Motos</option>
+                <option>SUVs</option>
+                <option>Lendas</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row p-3 gutter-sm">
+          <strong class="col-12 pb-1">Ano</strong>
+          <div class="col-6">
+            <div class="form-group">
+              <select class="form-control">
+                <option value="">Ano de</option>
+                <option>2021</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <select class="form-control">
+                <option value="">Ano até</option>
+                <option>2021</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row p-3 gutter-sm">
+          <strong class="col-12 pb-1">Preço</strong>
+          <div class="col-6">
+            <div class="form-group">
+              <input class="form-control" placeholder="De R$" />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <input class="form-control" placeholder="Até R$" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row p-3 gutter-sm">
+          <strong class="col-12 pb-1 text-sm">Quilometragem</strong>
+          <div class="col-12">
+            <div class="form-group">
+              <select class="form-control">
+                <option>0 km</option>
+                <option selected>Até 10000 km</option>
+                <option>Até 20000 km</option>
+                <option>Até 30000 km</option>
+                <option>Até 40000 km</option>
+                <option>Até 50000 km</option>
+                <option>Até 60000 km</option>
+                <option>Até 70000 km</option>
+                <option>Até 80000 km</option>
+                <option>Até 90000 km</option>
+                <option>Até 100000 km</option>
+                <option value="">Sem limite de km</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row p-3 gutter-sm">
+          <strong class="col-12 pb-1">Acessórios e opcionais</strong>
+          <div class="col-12 d-flex align-items-center pt-2 acessorio">
+            <i class="fa fa-check mr-2"></i>
+            <small>Ar Condicionado</small>
+          </div>
+          <div class="col-12 d-flex align-items-center pt-2 acessorio">
+            <i class="far fa-square mr-2"></i>
+            <small>Ar Condicionado</small>
+          </div>
+          <div class="col-12 d-flex align-items-center pt-2 acessorio">
+            <i class="far fa-square mr-2"></i>
+            <small>Ar Condicionado</small>
+          </div>
+          <div class="col-12 d-flex align-items-center pt-2 acessorio">
+            <i class="far fa-square mr-2"></i>
+            <small>Ar Condicionado</small>
+          </div>
+          <div class="col-12 d-flex align-items-center pt-2 acessorio">
+            <i class="far fa-square mr-2"></i>
+            <small>Ar Condicionado</small>
+          </div>
+        </div>
+      </div>
     </aside>
 
-    <main class="mt-3">teste</main>
+    <main class="mt-3">Resultados aqui...</main>
 
     <footer class="mt-auto pb-3 pt-5">
       <div class="container text-center text-secondary">
