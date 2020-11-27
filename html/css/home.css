@@ -36,16 +36,3 @@ main .card {
   font-size: 170%;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
-
-#recentes strong:last-child {
-  font-size: 120%;
-}
-
-#recentes a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 1rem 1.25rem;
-}
