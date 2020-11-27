@@ -19,6 +19,11 @@ button,
   font-weight: bold;
 }
 
+.form-control,
+.btn {
+  border-radius: 2px;
+}
+
 .max-width {
   max-width: 1800px;
 }
@@ -34,6 +39,17 @@ button,
 
 #header img {
   height: 35px;
+}
+
+#header .busca input {
+  width: 300px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#header .busca button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 #filtros {
