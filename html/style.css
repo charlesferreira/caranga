@@ -1,0 +1,147 @@
+:root {
+  --sidebar-width: 250px;
+}
+
+h2 {
+  color: #555;
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+
+input,
+select,
+button,
+.btn {
+  font-size: 0.8rem !important;
+}
+
+.btn {
+  font-weight: bold;
+}
+
+.max-width {
+  max-width: 1800px;
+}
+
+.gutter-sm [class*='col-'] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#header {
+  margin-bottom: 60px;
+}
+
+#header img {
+  height: 35px;
+}
+
+#filtros {
+  position: relative;
+  background: url(images/camaro.jpg) center center;
+  background-size: cover;
+}
+
+#filtros::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1a3b63;
+  filter: opacity(75%);
+}
+
+.listras {
+  border-radius: 10px 10px 0 0;
+  height: 15px;
+  background: repeating-linear-gradient(45deg, black, black 10px, white 10px, white 20px);
+  opacity: 0.15;
+}
+
+.categoria img {
+  width: 100%;
+}
+
+.categoria .card {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.categoria a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 1rem;
+  font-size: 150%;
+  text-decoration: none;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.anuncio .preco {
+  font-size: 120%;
+}
+
+.anuncio a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem 1.25rem;
+}
+
+#sidebar {
+  width: var(--sidebar-width);
+  margin-left: calc(var(--sidebar-width) * -1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: margin-left 0.5s;
+}
+
+#sidebar .row {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#sidebar strong {
+  font-size: 90%;
+}
+
+#sidebar .form-group {
+  margin-bottom: 0;
+}
+
+#sidebar .acessorio {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .categoria {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .categoria a {
+    padding: 1rem 1.25rem;
+    font-size: 170%;
+  }
+
+  #sidebar {
+    margin-left: 0;
+  }
+
+  #sidebar + main {
+    margin-left: var(--sidebar-width);
+  }
+}
