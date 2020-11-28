@@ -42,9 +42,9 @@ button,
 }
 
 #header .busca input {
-  width: 300px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  width: 300px;
 }
 
 #header .busca button {
