@@ -44,7 +44,7 @@ button,
 #header .busca input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  width: 300px;
+  width: 350px;
 }
 
 #header .busca button {
@@ -138,6 +138,31 @@ button,
 
 #sidebar .acessorio {
   cursor: pointer;
+}
+
+#fotos {
+  max-height: 390px;
+  overflow: hidden;
+  transition: margin-left 0.5s;
+}
+
+#fotos img {
+  width: calc(100vw / 3);
+  object-fit: cover;
+}
+
+#fotos-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  left: 0;
+  right: 0;
+}
+
+#fotos-nav button {
+  height: 3rem;
+  width: 3rem;
 }
 
 @media screen and (max-width: 767px) {
