@@ -1,9 +1,16 @@
 :root {
   --sidebar-width: 250px;
+  --dark-gray: #333;
+  --light-gray: #666;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 h2 {
-  color: #555;
+  color: var(--dark-gray);
   font-size: 1.35rem;
   font-weight: bold;
 }
@@ -147,7 +154,7 @@ button,
 }
 
 #fotos img {
-  width: calc(100vw / 3);
+  width: 100%;
   object-fit: cover;
 }
 
@@ -165,10 +172,36 @@ button,
   width: 3rem;
 }
 
+#detalhes .preco {
+  font-size: 2.25rem;
+}
+
+#detalhes h2 {
+  color: var(--light-gray);
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+#detalhes h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#detalhes .descricao,
+#detalhes ul li {
+  color: var(--light-gray);
+}
+
 @media screen and (max-width: 767px) {
   .categoria {
     padding-right: 5px;
     padding-left: 5px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #fotos img {
+    width: calc(100vw / 2);
   }
 }
 
@@ -184,5 +217,9 @@ button,
 
   #sidebar + main {
     margin-left: var(--sidebar-width);
+  }
+
+  #fotos img {
+    width: calc(100vw / 3);
   }
 }
