@@ -1,4 +1,5 @@
 :root {
+  --navbar-height: 60px;
   --sidebar-width: 250px;
   --dark-gray: #333;
   --light-gray: #666;
@@ -31,10 +32,6 @@ button,
   border-radius: 2px;
 }
 
-.max-width {
-  max-width: 1800px;
-}
-
 .gutter-sm [class*='col-'] {
   padding-right: 5px;
   padding-left: 5px;
@@ -45,7 +42,7 @@ button,
 }
 
 #header {
-  margin-bottom: 60px;
+  margin-bottom: var(--navbar-height);
 }
 
 #header img {
@@ -76,15 +73,25 @@ button,
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #1a3b63;
   filter: opacity(75%);
+  background-color: #1a3b63;
 }
 
-.listras {
+.stripes::before {
+  content: '';
   border-radius: 10px 10px 0 0;
+  margin-top: -16px;
   height: 15px;
-  background: repeating-linear-gradient(45deg, black, black 10px, white 10px, white 20px);
   opacity: 0.15;
+  background: repeating-linear-gradient(45deg, black, black 10px, white 10px, white 20px);
+}
+
+.card-link a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .categoria img {
@@ -93,45 +100,32 @@ button,
 
 .categoria .card {
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .categoria a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0.75rem 1rem;
-  font-size: 150%;
+  font-size: 1.5rem;
   text-decoration: none;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-  color: #fff;
+}
+
+.anuncio .card {
+  overflow: hidden;
 }
 
 .anuncio .preco {
-  font-size: 120%;
-}
-
-.anuncio a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 1rem 1.25rem;
+  font-size: 1.25rem;
 }
 
 #sidebar {
-  width: var(--sidebar-width);
-  margin-left: calc(var(--sidebar-width) * -1);
   position: fixed;
+  margin-left: calc(var(--sidebar-width) * -1);
+  padding-top: var(--navbar-height);
+  width: var(--sidebar-width);
   top: 0;
   left: 0;
   z-index: 1;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
   overflow-x: hidden;
-  padding-top: 60px;
   transition: margin-left 0.5s;
 }
 
@@ -181,11 +175,8 @@ button,
   color: var(--light-gray);
 }
 
-@media screen and (max-width: 767px) {
-  .categoria {
-    padding-right: 5px;
-    padding-left: 5px;
-  }
+#chat {
+  background-color: #eee;
 }
 
 @media screen and (min-width: 576px) {
@@ -196,8 +187,7 @@ button,
 
 @media screen and (min-width: 768px) {
   .categoria a {
-    padding: 1rem 1.25rem;
-    font-size: 170%;
+    font-size: 1.5rem;
   }
 
   #sidebar {
@@ -210,5 +200,11 @@ button,
 
   #fotos img {
     width: calc(100vw / 3);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .categoria a {
+    font-size: 1.75rem;
   }
 }
