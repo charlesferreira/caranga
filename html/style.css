@@ -18,7 +18,6 @@ h2 {
 
 .form-control,
 .btn {
-  font-size: 0.8rem;
   border-radius: 2px;
 }
 
@@ -174,10 +173,9 @@ h2 {
 }
 
 #chat .mensagens {
-  background-color: #f6f6f6;
-  font-size: 0.8rem;
   height: 250px;
   overflow-y: scroll;
+  background-color: #f6f6f6;
 }
 
 #chat .form .form-control,
@@ -193,6 +191,11 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
+  .form-control,
+  .btn {
+    font-size: 0.85rem;
+  }
+
   .categoria a {
     font-size: 1.5rem;
   }
@@ -207,6 +210,10 @@ h2 {
 
   #fotos img {
     width: calc(100vw / 3);
+  }
+
+  #chat .mensagens {
+    font-size: 0.85rem;
   }
 }
 
