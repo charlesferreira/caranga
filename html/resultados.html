@@ -45,122 +45,100 @@
     </header>
 
     <aside id="sidebar" class="h-100 shadow bg-white">
-      <div class="container-fluid">
-        <div class="row p-3 gutter-sm">
-          <strong class="col-12 pb-1 text-sm">Categoria</strong>
-          <div class="col-12">
-            <div class="form-group">
-              <select class="form-control">
-                <option value="">Todas as categorias</option>
-                <option>Carros</option>
-                <option>Motos</option>
-                <option>SUVs</option>
-                <option>Lendas</option>
-              </select>
-            </div>
-          </div>
-        </div>
+      <div class="d-flex flex-column p-3 border-bottom">
+        <small class="pb-1 font-weight-bold">Categoria</small>
+        <select class="form-control">
+          <option value="">Todas as categorias</option>
+          <option>Carros</option>
+          <option>Motos</option>
+          <option>SUVs</option>
+          <option>Lendas</option>
+        </select>
+      </div>
 
-        <div class="row p-3 gutter-sm">
-          <strong class="col-12 pb-1">Ano</strong>
-          <div class="col-6">
-            <div class="form-group">
-              <select class="form-control">
-                <option value="">Ano de</option>
-                <option>2021</option>
-                <option>2020</option>
-                <option>2019</option>
-                <option>2018</option>
-                <option>2017</option>
-                <option>2016</option>
-                <option>2015</option>
-                <option>2014</option>
-                <option>2013</option>
-                <option>2012</option>
-                <option>2011</option>
-                <option>2010</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="form-group">
-              <select class="form-control">
-                <option value="">Ano até</option>
-                <option>2021</option>
-                <option>2020</option>
-                <option>2019</option>
-                <option>2018</option>
-                <option>2017</option>
-                <option>2016</option>
-                <option>2015</option>
-                <option>2014</option>
-                <option>2013</option>
-                <option>2012</option>
-                <option>2011</option>
-                <option>2010</option>
-              </select>
-            </div>
-          </div>
+      <div class="d-flex flex-column p-3 border-bottom">
+        <small class="pb-1 font-weight-bold">Ano</small>
+        <div class="d-flex">
+          <select class="form-control mr-1">
+            <option value="">Ano de</option>
+            <option>2021</option>
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+            <option>2014</option>
+            <option>2013</option>
+            <option>2012</option>
+            <option>2011</option>
+            <option>2010</option>
+          </select>
+          <select class="form-control ml-1">
+            <option value="">Ano até</option>
+            <option>2021</option>
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+            <option>2014</option>
+            <option>2013</option>
+            <option>2012</option>
+            <option>2011</option>
+            <option>2010</option>
+          </select>
         </div>
+      </div>
 
-        <div class="row p-3 gutter-sm">
-          <strong class="col-12 pb-1">Preço</strong>
-          <div class="col-6">
-            <div class="form-group">
-              <input class="form-control" placeholder="De R$" />
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="form-group">
-              <input class="form-control" placeholder="Até R$" />
-            </div>
-          </div>
+      <div class="d-flex flex-column p-3 border-bottom">
+        <small class="pb-1 font-weight-bold">Preço</small>
+        <div class="d-flex">
+          <input class="form-control mr-1" placeholder="De R$" />
+          <input class="form-control ml-1" placeholder="Até R$" />
         </div>
+      </div>
 
-        <div class="row p-3 gutter-sm">
-          <strong class="col-12 pb-1 text-sm">Quilometragem</strong>
-          <div class="col-12">
-            <div class="form-group">
-              <select class="form-control">
-                <option>0 km</option>
-                <option selected>Até 10000 km</option>
-                <option>Até 20000 km</option>
-                <option>Até 30000 km</option>
-                <option>Até 40000 km</option>
-                <option>Até 50000 km</option>
-                <option>Até 60000 km</option>
-                <option>Até 70000 km</option>
-                <option>Até 80000 km</option>
-                <option>Até 90000 km</option>
-                <option>Até 100000 km</option>
-                <option value="">Sem limite de km</option>
-              </select>
-            </div>
-          </div>
+      <div class="d-flex flex-column p-3 border-bottom">
+        <small class="pb-1 font-weight-bold text-sm">Quilometragem</small>
+        <select class="form-control">
+          <option>0 km</option>
+          <option selected>Até 10000 km</option>
+          <option>Até 20000 km</option>
+          <option>Até 30000 km</option>
+          <option>Até 40000 km</option>
+          <option>Até 50000 km</option>
+          <option>Até 60000 km</option>
+          <option>Até 70000 km</option>
+          <option>Até 80000 km</option>
+          <option>Até 90000 km</option>
+          <option>Até 100000 km</option>
+          <option value="">Sem limite de km</option>
+        </select>
+      </div>
+
+      <div class="d-flex flex-column p-3 border-bottom">
+        <small class="pb-1 font-weight-bold">Acessórios e opcionais</small>
+        <div class="d-flex align-items-center pt-2 cursor-pointer">
+          <i class="fa fa-check mr-2"></i>
+          <small>Ar Condicionado</small>
         </div>
-
-        <div class="row p-3 gutter-sm">
-          <strong class="col-12 pb-1">Acessórios e opcionais</strong>
-          <div class="col-12 d-flex align-items-center pt-2 acessorio">
-            <i class="fa fa-check mr-2"></i>
-            <small>Ar Condicionado</small>
-          </div>
-          <div class="col-12 d-flex align-items-center pt-2 acessorio">
-            <i class="far fa-square mr-2"></i>
-            <small>Ar Condicionado</small>
-          </div>
-          <div class="col-12 d-flex align-items-center pt-2 acessorio">
-            <i class="far fa-square mr-2"></i>
-            <small>Ar Condicionado</small>
-          </div>
-          <div class="col-12 d-flex align-items-center pt-2 acessorio">
-            <i class="far fa-square mr-2"></i>
-            <small>Ar Condicionado</small>
-          </div>
-          <div class="col-12 d-flex align-items-center pt-2 acessorio">
-            <i class="far fa-square mr-2"></i>
-            <small>Ar Condicionado</small>
-          </div>
+        <div class="d-flex align-items-center pt-2 cursor-pointer">
+          <i class="far fa-square mr-2"></i>
+          <small>Ar Condicionado</small>
+        </div>
+        <div class="d-flex align-items-center pt-2 cursor-pointer">
+          <i class="far fa-square mr-2"></i>
+          <small>Ar Condicionado</small>
+        </div>
+        <div class="d-flex align-items-center pt-2 cursor-pointer">
+          <i class="far fa-square mr-2"></i>
+          <small>Ar Condicionado</small>
+        </div>
+        <div class="d-flex align-items-center pt-2 cursor-pointer">
+          <i class="far fa-square mr-2"></i>
+          <small>Ar Condicionado</small>
         </div>
       </div>
     </aside>
@@ -170,7 +148,7 @@
         <h2 class="my-3 mt-md-4">6 veículos à venda</h2>
 
         <div class="row">
-          <div class="anuncio col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="anuncio col-md-6 col-lg-4 col-xl-3 mb-4">
             <div class="card shadow">
               <img class="card-img-top" src="images/anuncio.jpg" />
               <div class="card-body d-flex flex-column">
@@ -183,7 +161,7 @@
           </div>
           <!-- /.anuncio -->
 
-          <div class="anuncio col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="anuncio col-md-6 col-lg-4 col-xl-3 mb-4">
             <div class="card shadow">
               <img class="card-img-top" src="images/anuncio.jpg" />
               <div class="card-body d-flex flex-column">
@@ -196,7 +174,7 @@
           </div>
           <!-- /.anuncio -->
 
-          <div class="anuncio col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="anuncio col-md-6 col-lg-4 col-xl-3 mb-4">
             <div class="card shadow">
               <img class="card-img-top" src="images/anuncio.jpg" />
               <div class="card-body d-flex flex-column">
@@ -209,7 +187,7 @@
           </div>
           <!-- /.anuncio -->
 
-          <div class="anuncio col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="anuncio col-md-6 col-lg-4 col-xl-3 mb-4">
             <div class="card shadow">
               <img class="card-img-top" src="images/anuncio.jpg" />
               <div class="card-body d-flex flex-column">
@@ -222,7 +200,7 @@
           </div>
           <!-- /.anuncio -->
 
-          <div class="anuncio col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="anuncio col-md-6 col-lg-4 col-xl-3 mb-4">
             <div class="card shadow">
               <img class="card-img-top" src="images/anuncio.jpg" />
               <div class="card-body d-flex flex-column">
@@ -235,7 +213,7 @@
           </div>
           <!-- /.anuncio -->
 
-          <div class="anuncio col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="anuncio col-md-6 col-lg-4 col-xl-3 mb-4">
             <div class="card shadow">
               <img class="card-img-top" src="images/anuncio.jpg" />
               <div class="card-body d-flex flex-column">
