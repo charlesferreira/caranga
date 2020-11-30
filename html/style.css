@@ -16,20 +16,14 @@ h2 {
   font-weight: bold;
 }
 
-input,
-select,
-button,
+.form-control,
 .btn {
-  font-size: 0.8rem !important;
+  font-size: 0.8rem;
+  border-radius: 2px;
 }
 
 .btn {
   font-weight: bold;
-}
-
-.form-control,
-.btn {
-  border-radius: 2px;
 }
 
 .gutter-sm [class*='col-'] {
@@ -175,8 +169,21 @@ button,
   color: var(--light-gray);
 }
 
-#chat {
-  background-color: #eee;
+.icone-chat-online {
+  color: limegreen;
+}
+
+#chat .mensagens {
+  background-color: #f6f6f6;
+  font-size: 0.8rem;
+  height: 250px;
+  overflow-y: scroll;
+}
+
+#chat .form .form-control,
+#chat .form .btn {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 @media screen and (min-width: 576px) {
