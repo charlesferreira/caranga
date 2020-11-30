@@ -161,7 +161,8 @@ button,
 }
 
 #detalhes .preco {
-  font-size: 2.25rem;
+  font-size: 32px;
+  line-height: 1.2;
 }
 
 #detalhes h2 {
