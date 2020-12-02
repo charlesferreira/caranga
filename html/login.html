@@ -33,10 +33,30 @@
       </nav>
     </header>
 
-    <main id="anuncios" class="mt-3 px-md-3 px-lg-5">
-      <div class="container-fluid">
-        <h2 class="my-3 mt-md-4">Meus anúncios</h2>
+    <main id="login" class="mt-3 px-3 d-flex flex-column align-items-center">
+      <p class="lead my-3 mt-md-4">Acessar sua conta no Caranga</p>
+      <div class="card mt-3 shadow-sm">
+        <div class="card-body d-flex flex-column align-items-center">
+          <form action="" class="w-100 d-flex flex-column">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="E-mail" autofocus />
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Senha" />
+            </div>
+            <p class="text-right">
+              <a href="#" class="small">Esqueci minha senha</a>
+            </p>
+            <a href="#" class="btn btn-block btn-primary">Entrar</a>
+          </form>
+
+          <p class="text-secondary my-3">ou</p>
+
+          <button type="button" class="btn btn-block btn-social-login btn-google">Entrar com Google</button>
+          <button type="button" class="btn btn-block btn-social-login btn-facebook">Entrar com Facebook</button>
+        </div>
       </div>
+      <p class="my-3 small">Não possui uma conta? <a href="#">Cadastre-se</a>.</p>
     </main>
 
     <footer class="mt-auto pb-3 pt-5">

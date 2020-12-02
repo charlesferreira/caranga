@@ -188,6 +188,26 @@ h2 {
   border-top-right-radius: 0;
 }
 
+#login .btn-social-login {
+  font-size: 0.85rem;
+  height: 40px;
+  background-size: 30px;
+  background-position: 5px 4px;
+  background-repeat: no-repeat;
+}
+
+#login .btn-google {
+  color: #454545;
+  border-color: #ddd;
+  background-image: url(images/icone-google.svg);
+}
+
+#login .btn-facebook {
+  color: #fff;
+  background-color: #3a559f;
+  background-image: url(images/icone-facebook.svg);
+}
+
 @media screen and (min-width: 576px) {
   #fotos img {
     width: calc(100vw / 2);
@@ -218,6 +238,10 @@ h2 {
 
   #chat .mensagens {
     font-size: 0.85rem;
+  }
+
+  #login .card {
+    min-width: 300px;
   }
 }
 
