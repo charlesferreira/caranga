@@ -240,8 +240,8 @@ h2 {
     font-size: 0.85rem;
   }
 
-  #login .card {
-    min-width: 300px;
+  #login {
+    width: 320px;
   }
 }
 
