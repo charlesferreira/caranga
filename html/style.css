@@ -48,7 +48,7 @@ h2 {
 #header .busca input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  width: 350px;
+  width: 300px;
 }
 
 #header .busca button {
@@ -123,6 +123,19 @@ h2 {
   z-index: 1;
   overflow-x: hidden;
   transition: margin-left 0.5s;
+}
+
+#sidebar .sidebar-menu a {
+  text-decoration: none;
+}
+
+#sidebar .sidebar-menu a:hover {
+  background-color: #f9f9f9;
+}
+
+#sidebar .sidebar-menu a.active {
+  color: #000 !important;
+  background-color: #f3f3f3;
 }
 
 #fotos {
