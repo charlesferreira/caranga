@@ -204,8 +204,8 @@ h2 {
 #login .btn-social-login {
   font-size: 0.85rem;
   height: 40px;
-  background-size: 30px;
-  background-position: 5px 4px;
+  background-size: 24px;
+  background-position: 8px center;
   background-repeat: no-repeat;
 }
 
@@ -261,5 +261,9 @@ h2 {
 @media screen and (min-width: 1024px) {
   .categoria a {
     font-size: 1.75rem;
+  }
+
+  #login .btn-social-login {
+    background-size: 30px;
   }
 }
