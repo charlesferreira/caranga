@@ -14,9 +14,12 @@ h1 {
 }
 
 h2 {
-  /* color: black; */
   font-size: 1.35rem;
   font-weight: bold;
+}
+
+h3 {
+  font-size: 1.2rem;
 }
 
 .form-control,
@@ -255,6 +258,25 @@ h2 {
 
   #login {
     width: 320px;
+  }
+
+  #meus-anuncios img {
+    max-width: 240px;
+    max-height: 160px;
+    object-fit: cover;
+  }
+
+  #meus-anuncios .card {
+    overflow: hidden;
+  }
+
+  #meus-anuncios .list-inline a {
+    font-size: 0.85rem;
+  }
+
+  #meus-anuncios .btn-excluir:hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
   }
 }
 
