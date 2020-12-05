@@ -224,6 +224,10 @@ h3 {
   background-image: url(images/icone-facebook.svg);
 }
 
+#login .btn-facebook:hover {
+  background-color: #2c417a;
+}
+
 @media screen and (min-width: 576px) {
   #fotos img {
     width: calc(100vw / 2);
@@ -257,7 +261,7 @@ h3 {
   }
 
   #login {
-    width: 320px;
+    max-width: 320px;
   }
 
   #meus-anuncios img {
