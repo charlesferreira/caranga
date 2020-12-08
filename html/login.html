@@ -23,45 +23,53 @@
   </head>
 
   <body class="d-flex flex-column h-100">
-    <header id="header">
-      <nav class="navbar navbar-light bg-white fixed-top shadow-sm border-bottom">
-        <div class="container">
-          <a class="navbar-brand mx-auto" href="." title="Voltar ao início">
-            <img src="images/logo-caranga.png" alt="Caranga" />
-          </a>
-        </div>
-      </nav>
-    </header>
+    <section>
+      <header id="header">
+        <nav class="navbar navbar-light bg-white fixed-top shadow-sm border-bottom">
+          <div class="container">
+            <a class="navbar-brand mx-auto" href="." title="Voltar ao início">
+              <img src="images/logo-caranga.png" alt="Caranga" />
+            </a>
+          </div>
+        </nav>
+      </header>
 
-    <main id="login" class="mt-3 mx-auto d-flex flex-column align-items-center w-100 px-4">
-      <p class="lead my-3 mt-md-4 text-center">Acessar sua conta no Caranga.</p>
-      <div class="card mt-3 shadow-sm w-100">
-        <div class="card-body d-flex flex-column align-items-center">
-          <form action="" class="w-100 d-flex flex-column">
-            <div class="form-group">
-              <input type="email" class="form-control" placeholder="E-mail" autofocus />
+      <main id="login" class="mx-auto px-4 w-100 d-flex flex-column align-items-center">
+        <p class="lead mb-2 mt-5 text-center">Acessar sua conta no Caranga.</p>
+        <div class="card mt-3 shadow-sm w-100">
+          <div class="card-body d-flex flex-column align-items-center">
+            <div class="w-100 d-flex flex-column">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="E-mail" autofocus />
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Senha" />
+              </div>
+              <p class="text-right">
+                <a href="esqueci-minha-senha.html" class="small">Esqueci minha senha</a>
+              </p>
+              <a href="meus-anuncios.html" class="btn btn-block btn-primary">Entrar</a>
             </div>
-            <div class="form-group">
-              <input type="password" class="form-control" placeholder="Senha" />
-            </div>
-            <p class="text-right">
-              <a href="esqueci-minha-senha.html" class="small">Esqueci minha senha</a>
-            </p>
-            <a href="meus-anuncios.html" class="btn btn-block btn-primary">Entrar</a>
-          </form>
 
-          <p class="text-secondary my-0 py-3">ou</p>
+            <p class="text-secondary my-0 py-3">ou</p>
 
-          <a href="meus-anuncios.html" class="btn btn-block btn-primary btn-social-login btn-google">
-            Entrar com Google
-          </a>
-          <a href="meus-anuncios.html" class="btn btn-block btn-primary btn-social-login btn-facebook">
-            Entrar com Facebook
-          </a>
+            <a
+              href="meus-anuncios.html"
+              class="btn btn-block btn-social-login btn-google d-flex align-items-center justify-content-center"
+            >
+              Entrar com Google
+            </a>
+            <a
+              href="meus-anuncios.html"
+              class="btn btn-block btn-social-login btn-facebook d-flex align-items-center justify-content-center"
+            >
+              Entrar com Facebook
+            </a>
+          </div>
         </div>
-      </div>
-      <p class="my-3 small">Primeira vez por aqui? <a href="cadastre-se.html">Crie sua conta</a>.</p>
-    </main>
+        <p class="my-3 small">Primeira vez por aqui? <a href="cadastre-se.html">Crie sua conta</a>.</p>
+      </main>
+    </section>
 
     <footer class="mt-auto pb-3 pt-5">
       <div class="container text-center text-secondary small">© 2020 Caranga. Alguns direitos reservados.</div>
