@@ -228,6 +228,10 @@ h3 {
   background-color: #2c417a;
 }
 
+.form-check > label {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 576px) {
   #fotos img {
     width: calc(100vw / 2);
